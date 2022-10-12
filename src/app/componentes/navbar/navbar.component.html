@@ -1,0 +1,112 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+  <div class="container">
+    <a class="navbar-brand text-light" [routerLink]="['/']">
+      <i class="far fa-file-video"></i> MovieDb API</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-sitemap"></i>
+            Categorías
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item" routerLinkActive="active">
+              <a class="dropdown-item" [routerLink]="['/peliculas/populares']"
+                >Populares</a
+              >
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/peliculas/en-cartelera']"
+                >En cartelera</a
+              >
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/peliculas/mejores-de-tom-cruise']"
+                >Mejores de Tom Cruise</a
+              >
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/peliculas/comedias-mas-taquilleras']"
+                >Comedias más taquilleras</a
+              >
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/peliculas/populares-entre-ninios']"
+                >Populares entre niños</a
+              >
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/peliculas/mejores-dramas-del-anio']"
+                >Mejores dramas del año</a
+              >
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/peliculas/mejores-con-rating-r']"
+                >Mejores con rating R</a
+              >
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/peliculas/mejores-del-anio']"
+                >Películas del año</a
+              >
+            </li>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          minlength="1"
+          #valorBusqueda
+          [(ngModel)]="busqueda"
+          name="busqueda"
+          placeholder="Nombre de la película"
+          aria-label="buscar"
+        />
+        <button
+          (click)="buscar(valorBusqueda.value)"
+          class="btn btn-success my-2 my-sm-0"
+          type="submit"
+        >
+          <i class="fas fa-search"></i>
+          Buscar
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

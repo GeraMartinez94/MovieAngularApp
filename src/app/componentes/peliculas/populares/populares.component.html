@@ -1,0 +1,11 @@
+<h3 class="titulo">Películas del momento (trending)</h3>
+
+<div class="card-columns">
+  <app-pelicula-tarjeta
+    *ngFor="let pelicula of peliculas"
+    (cambioPelicula)="verDetalles($event)"
+    [id]="pelicula.id"
+    [pelicula]="pelicula"
+  >
+  </app-pelicula-tarjeta>
+</div>

@@ -1,0 +1,11 @@
+<h3 class="titulo">Mejores películas del {{ anioActual }}</h3>
+
+<div class="card-columns">
+  <app-pelicula-tarjeta
+    *ngFor="let pelicula of peliculas"
+    [id]="pelicula.id"
+    (cambioPelicula)="verDetalles($event)"
+    [pelicula]="pelicula"
+  >
+  </app-pelicula-tarjeta>
+</div>

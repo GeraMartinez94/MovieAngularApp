@@ -1,0 +1,11 @@
+<h3 class="titulo">Películas con mejor rating R</h3>
+
+<div class="card-columns">
+  <app-pelicula-tarjeta
+    *ngFor="let pelicula of peliculas"
+    [pelicula]="pelicula"
+    (cambioPelicula)="verDetalles($event)"
+    [id]="pelicula.id"
+  >
+  </app-pelicula-tarjeta>
+</div>
