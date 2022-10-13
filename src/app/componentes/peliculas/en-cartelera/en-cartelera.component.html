@@ -1,6 +1,9 @@
-<h3 class="titulo">Películas en cartelera</h3>
+<mat-toolbar>
 
-<div class="card-columns">
+  <h3 class="titulo">Películas en cartelera</h3>
+</mat-toolbar>
+
+<div class="container card-columns">
   <app-pelicula-tarjeta
     *ngFor="let pelicula of peliculas"
     [id]="pelicula.id"

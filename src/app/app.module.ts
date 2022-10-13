@@ -21,7 +21,8 @@ import { PeliculaTarjetaComponent } from "./componentes/peliculas/pelicula-tarje
 import { DuracionPipe } from "./pipes/duracion.pipe";
 import { FooterComponent } from './componentes/footer/footer.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,7 @@ import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
     AcercaDeComponent
   ],
   exports: [FooterComponent],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, HttpClientModule,MatToolbarModule, AppRoutingModule, FormsModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

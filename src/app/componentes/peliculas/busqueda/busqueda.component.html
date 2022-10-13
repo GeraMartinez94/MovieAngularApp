@@ -1,6 +1,8 @@
+<mat-toolbar>
 <h3 class="titulo">Películas con el nombre de "{{ peliculaNombre }}"</h3>
+</mat-toolbar>
 
-<div *ngIf="peliculas" class="card-columns">
+<div *ngIf="peliculas" class="container card-columns">
   <app-pelicula-tarjeta
     *ngFor="let pelicula of peliculas"
     [id]="pelicula.id"

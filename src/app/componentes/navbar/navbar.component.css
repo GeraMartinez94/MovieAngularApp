@@ -6,11 +6,19 @@ nav {
   background: linear-gradient(to right, #4e4376, #2b5876);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.navbar-brand:first-child { 
+.busqueda{
+  border-radius: 350px;
+}
+.nav-item{
+  color:green;
+}
+.navbar-brand:first-child {
   cursor: pointer;
 }
 
 li>a {
   cursor: pointer;
+}
+.boton{
+  border-radius: 350px;
 }

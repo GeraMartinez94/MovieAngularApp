@@ -1,8 +1,11 @@
-<h3 class="titulo">
-  Mejores películas de Ciencia Ficción en las que ha estado Tom Cruise
-</h3>
+<mat-toolbar>
+  <h3 class="titulo">
+    Mejores películas de Ciencia Ficción en las que ha estado Tom Cruise
+  </h3>
 
-<div class="card-columns">
+</mat-toolbar>
+
+<div class=" container card-columns">
   <app-pelicula-tarjeta
     [id]="pelicula.id"
     *ngFor="let pelicula of peliculas"

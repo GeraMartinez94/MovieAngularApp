@@ -1,6 +1,9 @@
-<h3 class="titulo">Mejores películas del {{ anioActual }}</h3>
+<mat-toolbar>
+  <h3 class="titulo">Mejores películas del {{ anioActual }}</h3>
 
-<div class="card-columns">
+</mat-toolbar>
+
+<div class="container  card-columns">
   <app-pelicula-tarjeta
     *ngFor="let pelicula of peliculas"
     [id]="pelicula.id"

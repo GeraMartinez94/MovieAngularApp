@@ -1,14 +1,16 @@
-<div class="animated fadeInUp fast">
-<h3 *ngIf="pelicula" class="titulo">{{ pelicula.title }}</h3>
+<div class="container animated fadeInUp fast">
+  <mat-toolbar>
+    <h3 *ngIf="pelicula" class="titulo">{{ pelicula.title }}</h3>
+  </mat-toolbar>
 <div *ngIf="pelicula" class="row">
-  <div class="col-md-5">
+  <div class="container col-md-5">
     <img [src]="pelicula.poster_path" alt="{{ pelicula.title }}" />
     <h5 class="mb-3 mt-3"><b>Rating: </b>{{ pelicula?.vote_average }}</h5>
     <h5 class="mb-3"><b>Lanzamiento: </b> {{ pelicula?.release_date }}</h5>
     <h5><b>Votaciones: </b>{{ pelicula?.vote_count }}</h5>
   </div>
 
-  <div class="col-md-7">
+  <div class="container col-md-7">
     <h3 class="titulo">Sinopsis</h3>
     <p>{{ pelicula.overview }}</p>
 
@@ -32,7 +34,7 @@
       </ng-container>
     </ng-template>
 
-    <div *ngIf="pelicula.production_companies.length > 1; else productora">
+    <div class="container "*ngIf="pelicula.production_companies.length > 1; else productora">
       <h5 class="titulo">Productoras:</h5>
       <ul *ngFor="let productora of pelicula.production_companies">
         <li>{{ productora["name"] }}</li>

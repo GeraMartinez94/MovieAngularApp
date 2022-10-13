@@ -1,3 +1,6 @@
 img {
     min-height: 350px;
 }
+.pointer{
+  cursor:pointer;
+}

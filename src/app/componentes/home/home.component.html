@@ -1,8 +1,11 @@
-<h3 class="titulo">Categorías de películas</h3>
+<mat-toolbar>
+  <h3 class="titulo">Peliculas</h3>
+</mat-toolbar>
 
 <div class="card-columns">
-  <div class="card animated fadeInUp fast" *ngFor="let categoria of categorias">
+  <div class=" pointercontainer card animated fadeInUp fast" *ngFor="let categoria of categorias">
     <img
+
       [src]="categoria.imagenRuta"
       class="card-img-top"
       (click)="redireccionar(categoria.id)"

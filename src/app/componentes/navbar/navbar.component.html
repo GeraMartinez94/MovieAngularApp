@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
   <div class="container">
     <a class="navbar-brand text-light" [routerLink]="['/']">
-      <i class="far fa-file-video"></i> MovieDb API</a
+      <i class="far fa-file-video"></i> Movie Angular</a
     >
     <button
       class="navbar-toggler"
@@ -89,22 +89,22 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input
-          class="form-control mr-sm-2"
+          class="busqueda form-control mr-sm-2"
           type="search"
           minlength="1"
           #valorBusqueda
           [(ngModel)]="busqueda"
           name="busqueda"
-          placeholder="Nombre de la película"
+          placeholder="Busqueda"
           aria-label="buscar"
         />
         <button
           (click)="buscar(valorBusqueda.value)"
-          class="btn btn-success my-2 my-sm-0"
+          class=" boton btn btn-success my-2 my-sm-0"
           type="submit"
         >
           <i class="fas fa-search"></i>
-          Buscar
+
         </button>
       </form>
     </div>
