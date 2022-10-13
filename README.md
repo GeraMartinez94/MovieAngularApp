@@ -17,7 +17,7 @@ URL = https://api.themoviedb.org/3
 | Búsqueda de películas            | URL+/search/movie?include_adult=false&page=1&query=peliculaNombre                         |
 | Detalles de películas            | URL/movie/id                                                                              |
 
-### NgMovieDbAPI consta de:
+### Movie App consta de:
 
 * Múltiples componentes
 * Servicios
